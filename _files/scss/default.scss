@@ -1,0 +1,32 @@
+@import '../css/flatly.bootstrap.min.css';
+@import 'https://fonts.googleapis.com/css?family=Product+Sans';
+
+* {
+  font-family: "Product Sans";
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+}
+
+img {
+  @extend .img-responsive !optional;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 45px;
+  width: 45px;
+}
+
+.logo-text {
+  color: black;
+}
+
+.box {
+  border:1px solid #f2f2f2;
+}

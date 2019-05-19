@@ -1,3 +1,10 @@
 {
-  
+  "hello-world":{
+    "suffix":"hello-world",
+    "title":"Hello People",
+    "caption":"First sample blog post",
+    "date":"123",
+    "file":"hello-world.md",
+    "author":"Divy Srivastava"
+  }
 }

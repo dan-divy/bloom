@@ -12,6 +12,7 @@ var sassMiddleware = require('node-sass-middleware');
 var app = express();
 app.config = require('./_data/config');
 
+var indexRouter = require('./src/routes/index');
 var adminRouter = require('./src/routes/console');
 var blogRouter = require('./src/routes/blog');
 
@@ -56,6 +57,7 @@ function isLoggedIn(req, res, next) {
 }
 // route middleware to make sure a user is logged in
 
+app.use('/', indexRouter);
 app.use('/console', adminRouter);
 app.use('/feed', blogRouter);
 

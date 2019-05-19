@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- include('head') %>
+  <link rel="stylesheet" href="/theme/zero/zero.css">
+  <body>
+    <div class="hero">
+      <%- include('navbar') %>
+      <h1><%= blog.author %></h1>
+      <div class="sub-text container-fluid">
+        subtitle
+      </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-2">
+               <ul class="sidebar list-group">
+                  <li class="list-group-item" ><a href="">News</a></li>
+                  <li class="list-group-item" ><a href="#">Latest news</a></li>
+                  <li class="list-group-item" ><a href="#">Updates</a></li>
+                  <li class="list-group-item" ><a href="#">Training</a></li>
+                  <li class="list-group-item" ><a href="#">Nutrition</a></li>
+                  <li class="list-group-item" ><a href="#">Proteins</a></li>
+                  <li class="list-group-item" ><a href="#">Recipes</a></li>
+                  <li class="list-group-item" ><a href="#">Challenge</a></li>
+               </ul>
+            </div>
+            <% for(var i=0;i<posts.length;i++) { %>
+            <div class="col-md-10">
+              <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12 col-xs-12">
+                     <h1><%= posts[i].title %></h1>
+                     <div class="wrapper">
+                        <p><%= posts[i].caption %></p>
+                        <a class="btn btn-inverse" href="/feed/<%= posts[i].suffix %>" style="float:right;margin-right:20px">Read more</a>
+                     </div>
+                    </div>
+               </div>
+              </div>
+            </div>
+            <% } %>
+      </div>
+   </div>
+   <script src="/js/jquery/jquery.js" charset="utf-8"></script>
+   </body>
+</html>

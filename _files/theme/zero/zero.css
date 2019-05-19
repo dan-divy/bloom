@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.btn-inverse {
+  border: 2px solid #BEE0DA;
+  color:#66acba;
+}
+
+.btn-inverse:hover {
+  border: 2px solid #3EBC9C;
+  color: #3EBC9C;
+}
+
+a {
+  color:#66acba;
+}
+.logo-text {
+  color: #fff;
+}
+
+.hero {
+  margin-top: -1px;
+  padding-top: 1px;
+  height: 30rem;
+  background: rgb(119, 180, 180);
+  background-image: linear-gradient(to bottom, #66acba, #BEE0DA);
+  position: relative;
+  color:#fff;
+}
+
+.hero h1 {
+  padding-top: -.1rem;
+  margin-top: 5rem;
+  text-align: center;
+  overflow: hidden;
+  font-size: 4em;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Poiret One';
+  font-weight: normal;
+  span {
+    position: relative;
+    top: 10rem;
+    opacity: 0;
+  }
+}
+
+.sub-text {
+  height: 20rem;
+  width: 10rem;
+  margin: 0 auto;
+  background: #313131;
+  color: white;
+  text-align: center;
+  line-height: 5rem;
+  top: 10rem;
+  position: relative;
+  opacity: 0;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+p {
+  font-size: 1.3em;
+  color: #535353;
+}
+
+.body {
+  max-width: 60rem;
+  padding: 0 1rem;
+  margin: 5rem auto 0;
+  font-size: 1.3em;
+  color: #535353;
+}
+
+@media (max-width: 50rem) {
+  html {
+    font-size: 13px;
+  }
+}

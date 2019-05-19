@@ -2,8 +2,15 @@
 <html lang="en" dir="ltr">
   <%- include('head') %>
   <body>
-    <div class="container">
-      <%- content %>
+    <link rel="stylesheet" href="/theme/zero/zero.css">
+    <div class="hero">
+      <%- include('navbar') %>
+      <h1><%= title %></h1>
     </div>
+    <section class="body">
+      <%- content %>
+    </section>
+    <br>
+    <%- include('footer') %>
   </body>
 </html>

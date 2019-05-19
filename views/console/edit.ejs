@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- include('../head') %>
+  <link rel="stylesheet" href="/theme/zero/zero.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="/css/default.css">
+  <body>
+    <div style="background-color:#fff;border-radius:2px;">
+      <button class="btn btn-link" onclick="window.history.back();" style="color: #3f729b;">
+        <i class="fa fa-lg fa-arrow-circle-left"></i>
+      </button>
+      <button class="btn btn-link float-right" type="submit">
+        Post
+      </button>
+    </div>
+    <br>
+    <div id="exTab3">
+    <!--<ul class="nav nav-pills">
+			<li class="active">
+        <a  href="#1b" data-toggle="tab">Edit</a>
+			</li>
+			<li><a href="#2b" data-toggle="tab">Preiview</a>
+			</li>
+		</ul>-->
+    <div class="container-fluid">
+      <div class="float-left">
+        <h3>Untitled</h3>
+      </div>
+      <div class="float-right">
+        <a href="#1b" class="btn btn-success btn-inverse" data-toggle="tab">Edit</a>
+        <a href="#2b" onclick="parse();" class="btn btn-info btn-inverse" data-toggle="tab">Preiview</a>
+      </div>
+    </div>
+    <br>
+		<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1b">
+          <div class="container-fluid">
+              <input type="text" name="title" placeholder="Enter a title" class="form-control" />
+              <br>
+              <textarea class="editable" placeholder="Type your blog using Markdown or HTML"></textarea>
+          </div>
+				</div>
+				<div class="tab-pane" id="2b">
+          <div id="content" class="container-fluid blank">
+
+          </div>
+				</div>
+			</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      function parse() {
+        document.getElementById('content').innerHTML =
+        marked($(".editable").val(), {gfm:true});
+      }
+    </script>
+  </body>
+</html>

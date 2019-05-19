@@ -12,6 +12,14 @@ a:active {
   text-decoration: none;
 }
 
+.float-right {
+    float: right;
+}
+
+.float-left {
+  float: left;
+}
+
 img {
   @extend .img-responsive !optional;
 }

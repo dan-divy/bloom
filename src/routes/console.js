@@ -14,6 +14,12 @@ router.get('/', isAuth, function(req, res, next) {
   })
 });
 
+router.get('/new', isAuth, function(req, res, next) {
+  res.render('console/edit', {
+    blog:req.app.config
+  })
+});
+
 /** Login page and post **/
 router.route('/login')
   .get(function(req, res, next) {

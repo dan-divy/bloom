@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- include('../head') %>
+  <link rel="stylesheet" href="/css/admin.css">
+  <body><br>
+    <div class="container">
+    	<div class="login-container">
+                <div id="output"></div>
+                <div class="avatar"></div>
+                <div class="form-box">
+                    <form action="/console/login" method="post">
+                        <input name="username" type="text" placeholder="username">
+                        <input name="password" type="password" placeholder="password">
+                        <button class="btn btn-info btn-block login" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+
+    </div>
+  </body>
+</html>

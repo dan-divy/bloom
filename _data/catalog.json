@@ -1,10 +1,32 @@
 {
-  "hello-world":{
-    "suffix":"hello-world",
-    "title":"Hello People",
-    "caption":"First sample blog post",
-    "date":"123",
-    "file":"hello-world.md",
-    "author":"Divy Srivastava"
+  "hello-world": {
+    "suffix": "hello-world",
+    "title": "Hello People",
+    "caption": "First sample blog post",
+    "date": "123",
+    "file": "hello-world.md",
+    "author": "Divy Srivastava"
+  },
+  "hello-world-man": {
+    "suffix": "hello-world-man",
+    "title": "Hello world man",
+    "date": 1558284137379,
+    "file": "hello-world-man.md",
+    "author": "Divy Srivastava"
+  },
+  "first-blog-post-by-the-way": {
+    "suffix": "first-blog-post-by-the-way",
+    "title": "First Blog Post by the way",
+    "date": 1558284253215,
+    "file": "first-blog-post-by-the-way.md",
+    "author": "Divy Srivastava"
+  },
+  "unititle-blog": {
+    "suffix": "unititle-blog",
+    "title": "Unititle blog",
+    "date": 1558284448774,
+    "file": "unititle-blog.md",
+    "author": "Divy Srivastava",
+    "caption": "A new blog to start with"
   }
 }

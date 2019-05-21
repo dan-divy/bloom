@@ -57,7 +57,7 @@ vorpal
   });
 
 vorpal
-  .command('init')
+  .command('init' ,'Setup a blog')
   .action(function (args, callback) {
     inquirer.prompt(initQuestion).then(answers => {
       fs.writeFileSync(configUrl, JSON.stringify(answers, null, 2));

@@ -1,9 +1,9 @@
 {
-  "title":"Bloom",
-  "website":"https://blog.divy.work",
-  "author":"Divy Srivastava",
-  "host":"localhost",
-  "port":"8080",
-  "username":"admin",
-  "password":"admin123"  
+  "title": "Bloom",
+  "website": "example.com",
+  "author": "Divy",
+  "host": "localhost",
+  "port": "8080",
+  "username": "admin",
+  "password": "admin123"
 }

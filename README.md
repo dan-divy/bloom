@@ -6,6 +6,7 @@ A powerful open-source blogging engine built for humans, by humans.
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2cfe275142924d92a546957b4d817076)](https://www.codacy.com/app/DivySrivastava/bloom?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DivySrivastava/bloom&amp;utm_campaign=Badge_Grade)
 ![MIT](https://img.shields.io/badge/liscense-MIT-brightgreen.svg)
+![Travis-CI](https://api.travis-ci.org/DivySrivastava/bloom.svg?branch=master)
 
 ## Features
   * Simplicity

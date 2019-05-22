@@ -1,9 +1,14 @@
+require('shelljs/global');
 const vorpal = require('vorpal')();
 const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
 
 var configUrl = path.join(__dirname, './_data/config.json');
+var dbUrl = path.join(__dirname, './_data/catalog.json');
+var database = require(dbUrl);
+var config = require(configUrl);
+
 
 var initQuestion = [
   {
@@ -37,33 +42,76 @@ var initQuestion = [
     message:'Enter a username for accessing console'
   },
   {
-    type:'input',
+    type:'password',
     name:'password',
     message:'Enter a password for console'
   }
 ]
 
+var newBlogQuestions = [
+  {
+    type:'input',
+    name:'title',
+    message:'Give a great title for your post'
+  },
+  {
+    type:'input',
+    name:'caption',
+    message:'Give a small description'
+  }
+];
+
 vorpal
-  .command('say [words...]')
-  .option('-b, --backwards')
-  .option('-t, --twice')
+  .command('new' ,'Create a new post')
   .action(function (args, callback) {
-    let str = args.words.join(' ');
-    str = (args.options.backwards) ?
-      str.split('').reverse().join('') :
-      str;
-    this.log(str);
-    callback();
+    inquirer.prompt(newBlogQuestions).then(answers => {
+      answers["suffix"] = answers["title"].replace(/\s+/g, '-').toLowerCase();
+      database[answers["suffix"]] = {
+        suffix: answers["suffix"],
+        title:answers["title"],
+        date:new Date(),
+        file:answers["suffix"]+".md",
+        author:config.author,
+        caption:answers["caption"]
+      }
+      fs.writeFileSync(dbUrl, JSON.stringify(database, null, 2));
+      fs.writeFileSync(path.join(__dirname, '_dist/posts/'+answers["suffix"]+".md"), `# ${answers["title"]}`);
+      this.log('Success! New post created '+answers["suffix"]+".md");
+      callback();
+    })
   });
 
 vorpal
-  .command('init' ,'Setup a blog')
+  .command('init')
+  .alias('setup')
+  .description('Setup a blog')
   .action(function (args, callback) {
     inquirer.prompt(initQuestion).then(answers => {
+
       fs.writeFileSync(configUrl, JSON.stringify(answers, null, 2));
       this.log('Done!');
       callback();
     })
+  });
+
+vorpal
+  .command('serve [commands...]')
+  .alias('start')
+  .description('Start the blog server')
+  .action(function (args, callback) {
+    console.info(args)
+    if(args.commands[0] == 'infinte') {
+      exec('forever start app.js', (code, output) => {
+        console.log('Exit Code : '+ code);
+        console.log('Output : '+ output);
+      });
+    }
+    else {
+      exec('node app.js', (code, output) => {
+        console.log('Exit Code : '+ code);
+        console.log('Output : '+ output);
+      });
+    }
   });
 
 vorpal.delimiter('bloom$').show()

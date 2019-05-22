@@ -14,7 +14,7 @@ A powerful open-source blogging engine built for humans, by humans.
   * No database needed.
   * Theme addons supported.
 
-## Usage
+## Installation
   First clone the repository on your local computer and install all the dependencies.
   ```bash
   $ git clone https://github.com/DivySrivastava/bloom
@@ -43,11 +43,56 @@ A powerful open-source blogging engine built for humans, by humans.
   ```bash
   $ npm start
   ```
-## Logo
-The logo is created by using an online tool which does not provide any liscense for usage.
-Therefore, It is now liscensed under MIT liscense.
+  Now you can access your blog from `localhost:8080`
 
-## Liscense
+## Usage  
+  So Assuming that your bloom server is running locally on port 8080.
+
+  You and your viewers can now access the blog home page on http://localhost:8080
+  ### Accessing the admin console
+  * Go to http://localhost:8080/console
+  * You will have to login with your username and password you entered while setup.
+    You can find your username and password inside `_data/config.json`.
+    ```js
+    {
+      "title": "MyBlogTitle", // Blog title
+      "website": "https://myblog.com", // Website url
+      "author": "YourName", // Author's name
+      "host": "localhost", // Server host
+      "port": "8080", // Server Port
+      "username": "admin", // Your username
+      "password": "admin123" // Your password
+    }
+    ```
+    Anyone with the username and password can access the blog console.
+  * Enter the username and password on the console login page.
+  * You will be redirected to the console page. Viola!
+
+
+  ### Creating a blog post
+  * Once you are on the console page, click on `New Post` button.
+  * You have now a fresh new blog template ready to edit.
+  * Editing is easy-peasy. Just fill in the basic information of your post.
+    * Enter the blog title (be specific and not too long).
+
+    ![](./docs/console-new-blog-title.png)
+
+    * Enter the blog description (elaborate more on the topic).
+
+    ![](./docs/console-new-blog-caption.png)
+
+    * Finally write your post in Markdown and HTML.
+
+    ![](./docs/console-new-blog-body.png)
+
+    * You can preview your page by clicking the `Preview` button on the page.
+    * Once you're done, submit the post by clicking on `Post` button on the top-right corner of the page.
+
+## Logo
+The logo is created by using an online tool which does not provide any license for usage.
+Therefore, It is now licensed under MIT license.
+
+## License
 
 (The MIT License)
 

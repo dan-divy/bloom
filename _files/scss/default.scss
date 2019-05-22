@@ -1,8 +1,17 @@
 @import '../css/flatly.bootstrap.min.css';
 @import 'https://fonts.googleapis.com/css?family=Product+Sans';
 
+@font-face {
+    font-family: 'BlaBla';
+    src: url('../fonts/BlaBla.otf');
+}
+
 * {
-  font-family: "Product Sans";
+  font-family: 'Product Sans';
+}
+
+.blaBla {
+    font-family: 'BlaBla';
 }
 
 a,

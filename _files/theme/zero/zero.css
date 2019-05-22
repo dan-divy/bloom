@@ -15,6 +15,16 @@
   border: 2px solid #3EBC9C;
   color: #3EBC9C;
 }
+.article-div {
+  max-width: 90%;
+  padding: 0 1rem;
+  margin: 5rem auto 0;
+  font-size: 1.3em;
+  color: #535353;
+}
+.article {
+
+}
 
 a {
   color:#66acba;
@@ -41,7 +51,7 @@ a {
   font-size: 4em;
   color: white;
   text-transform: uppercase;
-  font-family: 'Poiret One';
+  font-family: 'BlaBla';
   font-weight: normal;
   span {
     position: relative;

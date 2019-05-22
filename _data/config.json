@@ -1,7 +1,7 @@
 {
-  "title": "Bloom",
-  "website": "example.com",
-  "author": "Divy",
+  "title": "Bloomy",
+  "website": "http://blog.divy.work",
+  "author": "Divy Srivastava",
   "host": "localhost",
   "port": "8080",
   "username": "admin",

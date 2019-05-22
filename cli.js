@@ -14,7 +14,7 @@ var initQuestion = [
   {
     type:'input',
     name:'website',
-    message:'Enter you blog url'
+    message:'Enter your blog url'
   },
   {
     type:'input',

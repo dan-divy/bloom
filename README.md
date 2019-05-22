@@ -5,6 +5,7 @@
 A powerful open-source blogging engine built for humans, by humans.
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2cfe275142924d92a546957b4d817076)](https://www.codacy.com/app/DivySrivastava/bloom?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DivySrivastava/bloom&amp;utm_campaign=Badge_Grade)
+![MIT](https://img.shields.io/badge/liscense-MIT-brightgreen.svg)
 
 ## Features
   * Simplicity
@@ -17,34 +18,11 @@ A powerful open-source blogging engine built for humans, by humans.
   * Theme addons supported.
 
 ## Installation
+
   First clone the repository on your local computer and install all the dependencies.
-  ```bash
-  $ git clone https://github.com/DivySrivastava/bloom
-  $ cd bloom
-  $ npm install
-  ```
-  Now start the `bloom-cli`.
-  ```bash
-  $ node cli.js
-  ```
-  This will start the a command-line enviornment for your app.
-  Now you can setup your blog.
-  ```bash
-  bloom$ init
-  ? Enter a title - MyBlogTitle
-  ? Enter your blog url - https://myblog.com
-  ? Enter your name - YourName
-  ? Enter a host name - localhost
-  ? Enter a port - 8080
-  ? Enter a username for accessing console - admin
-  ? Enter a password - admin123
-  Done!
-  ```
-  Exit the `bloom-cli` after this.
-  Finally you can start the blog server using
-  ```bash
-  $ npm start
-  ```
+
+  ![](./docs/render.gif)
+
   Now you can access your blog from `localhost:8080`
 
 ## Usage  
@@ -90,7 +68,32 @@ A powerful open-source blogging engine built for humans, by humans.
     * You can preview your page by clicking the `Preview` button on the page.
     * Once you're done, submit the post by clicking on `Post` button on the top-right corner of the page.
 
+    ![](./docs/new-blog.png)
+
+## Contribution
+
+To contribute,
+Fork this repository and clone the fork on your local machine via git.
+
+```bash
+  $ git clone https://github.com/<YourUsername>/bloom
+```
+Now, you can freely play with the code and when you think you have added or improved some stuff, push it to your forked repo and create a pull request.
+Give a nice and brief note of what you have done.
+
+Remember, do not explain what your code does... rather tell what effect it does to the project.
+
+Before contributing, read the [code of conduct](./docs/CODE_OF_CONDUCT.md)
+
+Contribute to this documentation by creating a pull request.
+
+## Authors
+
+* [Divy Srivastava](https://divy.work)
+* [Dan](https://dancodes.online)
+
 ## Logo
+
 The logo is created by using an online tool which does not provide any license for usage.
 Therefore, It is now licensed under MIT license.
 

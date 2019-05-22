@@ -1,0 +1,349 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /media/divy/Data/data/Projects/bloom
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 24
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 200
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Bloom
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1289
+    content: "\e]0;divy@divy-pc:/media/divy/Data/data/Projects/bloom\a\e]7;file://divy-pc/media/divy/Data/data/Projects/bloom\a\e]0;divy@divy-pc: /media/divy/Data/data/Projects/bloom\a\e[01;32mdivy@divy-pc\e[00m:\e[01;34m/media/divy/Data/data/Projects/bloom\e[00m$ "
+  - delay: 6518
+    content: 'n'
+  - delay: 100
+    content: o
+  - delay: 177
+    content: d
+  - delay: 113
+    content: e
+  - delay: 169
+    content: ' '
+  - delay: 426
+    content: c
+  - delay: 111
+    content: l
+  - delay: 180
+    content: i
+  - delay: 659
+    content: .
+  - delay: 270
+    content: j
+  - delay: 179
+    content: s
+  - delay: 395
+    content: "\r\n"
+  - delay: 8863
+    content: "bloom$ \e[7D\e[7C"
+  - delay: 2102
+    content: "\e[1000D\e[Kbloom$ i\e[8D\e[8C"
+  - delay: 121
+    content: "\e[1000D\e[Kbloom$ in\e[9D\e[9C"
+  - delay: 139
+    content: "\e[1000D\e[Kbloom$ ini\e[10D\e[10C"
+  - delay: 163
+    content: "\e[1000D\e[Kbloom$ init\e[11D\e[11C"
+  - delay: 366
+    content: "\e[1000D\e[Kbloom$ \e[36minit\e[39m\e[11D\e[11C\r\n"
+  - delay: 32
+    content: "\e[32m?\e[39m \e[1mEnter a title\e[22m\e[0m \e[0m\e[16D\e[16C"
+  - delay: 1452
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a title\e[22m\e[0m \e[0mB\e[17D\e[17C"
+  - delay: 156
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a title\e[22m\e[0m \e[0mBl\e[18D\e[18C"
+  - delay: 174
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a title\e[22m\e[0m \e[0mBlo\e[19D\e[19C"
+  - delay: 119
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a title\e[22m\e[0m \e[0mBloo\e[20D\e[20C"
+  - delay: 199
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a title\e[22m\e[0m \e[0mBloom\e[21D\e[21C"
+  - delay: 865
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a title\e[22m\e[0m \e[0m\e[36mBloom\e[39m\e[21D\e[21C"
+  - delay: 5
+    content: "\r\n\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0m\e[22D\e[22C"
+  - delay: 1070
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mh\e[23D\e[23C"
+  - delay: 154
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mht\e[24D\e[24C"
+  - delay: 172
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhtt\e[25D\e[25C"
+  - delay: 162
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttp\e[26D\e[26C"
+  - delay: 154
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps\e[27D\e[27C"
+  - delay: 242
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps:\e[28D\e[28C"
+  - delay: 202
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps:/\e[29D\e[29C"
+  - delay: 132
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://\e[30D\e[30C"
+  - delay: 393
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://m\e[31D\e[31C"
+  - delay: 345
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://my\e[32D\e[32C"
+  - delay: 269
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://myb\e[33D\e[33C"
+  - delay: 142
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://mybl\e[34D\e[34C"
+  - delay: 154
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://myblo\e[35D\e[35C"
+  - delay: 168
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://myblog\e[36D\e[36C"
+  - delay: 263
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://myblog.\e[37D\e[37C"
+  - delay: 415
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://myblog.c\e[38D\e[38C"
+  - delay: 121
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://myblog.co\e[39D\e[39C"
+  - delay: 151
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0mhttps://myblog.com\e[40D\e[40C"
+  - delay: 249
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your blog url\e[22m\e[0m \e[0m\e[36mhttps://myblog.com\e[39m\e[40D\e[40C\r\n\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0m\e[17D\e[17C"
+  - delay: 1001
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mD\e[18D\e[18C"
+  - delay: 158
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDi\e[19D\e[19C"
+  - delay: 126
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDiv\e[20D\e[20C"
+  - delay: 129
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy\e[21D\e[21C"
+  - delay: 217
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy \e[22D\e[22C"
+  - delay: 215
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy S\e[23D\e[23C"
+  - delay: 131
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy Sr\e[24D\e[24C"
+  - delay: 226
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy Sri\e[25D\e[25C"
+  - delay: 232
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy Sriv\e[26D\e[26C"
+  - delay: 106
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy Sriva\e[27D\e[27C"
+  - delay: 109
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy Srivas\e[28D\e[28C"
+  - delay: 39
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy Srivast\e[29D\e[29C"
+  - delay: 100
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy Srivasta\e[30D\e[30C"
+  - delay: 89
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy Srivastav\e[31D\e[31C"
+  - delay: 88
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0mDivy Srivastava\e[32D\e[32C"
+  - delay: 252
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter you name\e[22m\e[0m \e[0m\e[36mDivy Srivastava\e[39m\e[32D\e[32C\r\n\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0m\e[23D\e[23C"
+  - delay: 1148
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0ml\e[24D\e[24C"
+  - delay: 178
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0mlo\e[25D\e[25C"
+  - delay: 98
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0mloc\e[26D\e[26C"
+  - delay: 123
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0mloca\e[27D\e[27C"
+  - delay: 43
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0mlocal\e[28D\e[28C"
+  - delay: 245
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0mlocalh\e[29D\e[29C"
+  - delay: 94
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0mlocalho\e[30D\e[30C"
+  - delay: 130
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0mlocalhos\e[31D\e[31C"
+  - delay: 125
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0mlocalhost\e[32D\e[32C"
+  - delay: 247
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter your host name\e[22m\e[0m \e[0m\e[36mlocalhost\e[39m\e[32D\e[32C\r\n\e[32m?\e[39m \e[1mEnter a port for the server\e[22m\e[0m \e[0m\e[30D\e[30C"
+  - delay: 802
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a port for the server\e[22m\e[0m \e[0m8\e[31D\e[31C"
+  - delay: 184
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a port for the server\e[22m\e[0m \e[0m80\e[32D\e[32C"
+  - delay: 166
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a port for the server\e[22m\e[0m \e[0m808\e[33D\e[33C"
+  - delay: 178
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a port for the server\e[22m\e[0m \e[0m8080\e[34D\e[34C"
+  - delay: 301
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a port for the server\e[22m\e[0m \e[0m\e[36m8080\e[39m\e[34D\e[34C\r\n\e[32m?\e[39m \e[1mEnter a username for accessing console\e[22m\e[0m \e[0m\e[41D\e[41C"
+  - delay: 1594
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a username for accessing console\e[22m\e[0m \e[0ma\e[42D\e[42C"
+  - delay: 123
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a username for accessing console\e[22m\e[0m \e[0mad\e[43D\e[43C"
+  - delay: 219
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a username for accessing console\e[22m\e[0m \e[0madm\e[44D\e[44C\e[2K\e[G\e[32m?\e[39m \e[1mEnter a username for accessing console\e[22m\e[0m \e[0madmi\e[45D\e[45C"
+  - delay: 129
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a username for accessing console\e[22m\e[0m \e[0madmin\e[46D\e[46C"
+  - delay: 255
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a username for accessing console\e[22m\e[0m \e[0m\e[36madmin\e[39m\e[46D\e[46C\r\n\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0m\e[31D\e[31C"
+  - delay: 662
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0ma\e[32D\e[32C"
+  - delay: 124
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0mad\e[33D\e[33C"
+  - delay: 59
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0madm\e[34D\e[34C"
+  - delay: 159
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0madmi\e[35D\e[35C"
+  - delay: 154
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0madmin\e[36D\e[36C"
+  - delay: 190
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0madmin1\e[37D\e[37C"
+  - delay: 125
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0madmin12\e[38D\e[38C"
+  - delay: 185
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0madmin123\e[39D\e[39C"
+  - delay: 269
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mEnter a password for console\e[22m\e[0m \e[0m\e[36madmin123\e[39m\e[39D\e[39C\r\n"
+  - delay: 7
+    content: "Done!\r\n"
+  - delay: 5
+    content: "bloom$ \e[7D\e[7C"
+  - delay: 2719
+    content: "\e[1000D\e[K \e[1D\e[1C\e[1000D\e[K \e[1D\e[1C\r\nbloom$ \e[7D\e[7C\e[1000D\e[K(^C again to quit)\r\nbloom$ "
+  - delay: 436
+    content: "\r\n\r\n"
+  - delay: 11
+    content: "\e]0;divy@divy-pc:/media/divy/Data/data/Projects/bloom\a\e]7;file://divy-pc/media/divy/Data/data/Projects/bloom\a\e]0;divy@divy-pc: /media/divy/Data/data/Projects/bloom\a\e[01;32mdivy@divy-pc\e[00m:\e[01;34m/media/divy/Data/data/Projects/bloom\e[00m$ "
+  - delay: 879
+    content: l
+  - delay: 141
+    content: s
+  - delay: 68
+    content: "\r\n"
+  - delay: 29
+    content: "\e[0m\e[01;32mapp.js\e[0m  \e[34;42m_data\e[0m  \e[34;42mdocs\e[0m    \e[34;42mnode_modules\e[0m  \e[01;32mpackage-lock.json\e[0m  \e[34;42msrc\e[0m\r\n\e[01;32mcli.js\e[0m  \e[34;42m_dist\e[0m  \e[34;42m_files\e[0m  \e[01;32mpackage.json\e[0m  \e[01;32mREADME.md\e[0m          \e[34;42mviews\e[0m\r\n"
+  - delay: 7
+    content: "\e]0;divy@divy-pc:/media/divy/Data/data/Projects/bloom\a\e]7;file://divy-pc/media/divy/Data/data/Projects/bloom\a\e]0;divy@divy-pc: /media/divy/Data/data/Projects/bloom\a\e[01;32mdivy@divy-pc\e[00m:\e[01;34m/media/divy/Data/data/Projects/bloom\e[00m$ "
+  - delay: 1459
+    content: 'n'
+  - delay: 122
+    content: o
+  - delay: 94
+    content: d
+  - delay: 97
+    content: e
+  - delay: 167
+    content: ' '
+  - delay: 162
+    content: a
+  - delay: 149
+    content: p
+  - delay: 160
+    content: p
+  - delay: 454
+    content: .
+  - delay: 373
+    content: j
+  - delay: 156
+    content: s
+  - delay: 660
+    content: "\r\n"
+  - delay: 5121
+    content: "Listening on port 8080\r\n"
+  - delay: 4644
+    content: ^C
+  - delay: 7
+    content: "\r\n"
+  - delay: 5
+    content: "\e]0;divy@divy-pc:/media/divy/Data/data/Projects/bloom\a\e]7;file://divy-pc/media/divy/Data/data/Projects/bloom\a\e]0;divy@divy-pc: /media/divy/Data/data/Projects/bloom\a\e[01;32mdivy@divy-pc\e[00m:\e[01;34m/media/divy/Data/data/Projects/bloom\e[00m$ "
+  - delay: 443
+    content: "logout\r\n"

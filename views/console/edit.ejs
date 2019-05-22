@@ -6,14 +6,27 @@
   <link rel="stylesheet" href="/css/default.css">
   <body>
     <form action="/console/new" method="post">
-    <div style="background-color:#fff;border-radius:2px;">
-      <button class="btn btn-link" onclick="window.history.back();" style="color: #3f729b;">
-        <i class="fa fa-lg fa-arrow-circle-left"></i>
-      </button>
-      <button class="btn btn-link float-right" type="submit">
-        Post
-      </button>
-    </div>
+      <div style="background-color:#fff;border-radius:2px;">
+        <button class="btn btn-link" onclick="window.history.back();" style="color: #3f729b;">
+          <i class="fa fa-lg fa-arrow-circle-left"></i>
+        </button>
+
+      </div>
+      <div class="container-fluid box-shadow top-navbar" style="background:transparent;">
+        <a class="float-left" href="/">
+        <h2>
+          <img src="/img/icon/plant.png" class="logo">
+          <font class="logo-text blaBla"><%= blog.title %></font>
+          <br>
+        </h2>
+        </a>
+        <div class="float-right" style="margin-top:20px;">
+          <button class="btn btn-warning btn-inverse float-right" type="submit">
+            Post
+          </button>
+        </div>
+      </div>
+
     <br>
     <div id="exTab3">
     <div class="container-fluid">

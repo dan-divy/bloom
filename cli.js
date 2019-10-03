@@ -113,5 +113,5 @@ vorpal
       });
     }
   });
-
-vorpal.delimiter('bloom$').show()
+console.log("Type help to view commands..")
+vorpal.delimiter('bloom $ ').show()

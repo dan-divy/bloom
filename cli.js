@@ -99,8 +99,7 @@ vorpal
   .alias('start')
   .description('Start the blog server')
   .action(function (args, callback) {
-    console.info(args)
-    if(args.commands[0] == 'infinte') {
+    if(args.commands && args.commands[0] == 'infinte') {
       exec('forever start app.js', (code, output) => {
         console.log('Exit Code : '+ code);
         console.log('Output : '+ output);
@@ -113,5 +112,5 @@ vorpal
       });
     }
   });
-
-vorpal.delimiter('bloom$').show()
+console.log("Type help to view commands..")
+vorpal.delimiter('bloom $ ').show()

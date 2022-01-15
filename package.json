@@ -18,7 +18,7 @@
     "fuse.js": "^3.4.5",
     "http-errors": "^1.7.3",
     "inquirer": "^6.5.2",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "mongoose": "^5.7.3",
     "morgan": "^1.9.1",
     "mv": "^2.1.1",

@@ -32,7 +32,7 @@
     "passport-twitter": "^1.0.4",
     "path": "^0.12.7",
     "push.js": "^1.0.12",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "time-ago": "^0.2.1",
     "vorpal": "^1.12.0"
   },
